@@ -1,0 +1,60 @@
+.display {
+  box-sizing: border-box;
+  border: 3vmin dotted;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display_center {
+  z-index: 1;
+  background-color: red;
+  border-radius: 50%;
+  width: 5vmin;
+  height: 5vmin;
+}
+
+.display_seconds-hand {
+  transform-origin: bottom;
+  background-color: #000;
+  border-radius: 4px;
+  width: 1vmin;
+  height: 35vmin;
+  animation: 60s linear infinite rotation;
+  position: absolute;
+  top: 2vmin;
+}
+
+.display_minutes-hand {
+  transform-origin: bottom;
+  background-color: #000;
+  border-radius: 8px;
+  width: 2vmin;
+  height: 25vmin;
+  animation: 3600s linear infinite rotation;
+  position: absolute;
+  top: 12vmin;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
